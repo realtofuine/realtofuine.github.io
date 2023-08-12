@@ -5,6 +5,14 @@
   --highlight: #39AC4C;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+  --background: #FFF;
+  --text: #000;
+  --input: #dadada;
+  }
+}
+
 body {
   background: var(--background);
   text-align: center;
@@ -47,7 +55,7 @@ embed {
   width: 100px;
 }
 
-.theme-switch {
+/* .theme-switch {
   --background: #FFF;
   --text: #333;
   color: var(--text);
@@ -83,7 +91,7 @@ embed {
 }
 .light-theme a {
   color: var(--text);
-}
+} */
 
 .navigation {
   display: flex;
