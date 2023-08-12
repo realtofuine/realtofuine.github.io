@@ -1,25 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald");
 :root {
   --background: #333;
+  --input: #505050;
   --text: #FFF;
   --highlight: #39AC4C;
 }
 
 body {
   background: var(--background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  color: var(--text);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
   height: 100vh;
-  overflow: hidden;
   transition: 0.5s background ease;
 }
 
 .container {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  margin:0 auto;
+  /* width: 900px; */
+  /* padding-left: 200px;
+  padding-right: 200px; */
+  /* align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
+}
+
+input[type="text"], textarea {
+  background-color : var(--input);
+  color: var(--text);
+}
+
+button {
+  background-color : var(--input);
+  border: none;
+  color: var(--text);
+}
+
+embed {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.landscape {
+  width: 100px;
 }
 
 .theme-switch {
@@ -47,6 +72,7 @@ body {
 .light-theme {
   --background: #FFF;
   --text: #000;
+  --input: #dadada;
   background: var(--background);
 }
 .light-theme .theme-switch {
@@ -64,10 +90,10 @@ body {
   justify-content: center;
 }
 
-ul {
-  display: flex;
+ ul {
   list-style-type: none;
 }
+/*
 ul a {
   margin: 10px 30px;
   position: relative;
@@ -97,4 +123,4 @@ ul .active {
 }
 ul .active:hover:before {
   opacity: 0;
-}
+} */
