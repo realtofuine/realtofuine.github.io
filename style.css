@@ -17,7 +17,7 @@ body {
   background: var(--background);
   text-align: center;
   color: var(--text);
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 20px;
   height: 100vh;
   transition: 0.5s background ease;
